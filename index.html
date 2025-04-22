@@ -1,24 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fact O Pedia</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="logo.png" height="68px" width="68px" />
-      <h1>Fact O Pedia</h1>
+    <header class="header">
+      <img
+        src="logo.png"
+        height="68px"
+        width="68px"
+        alt="This is a fact o pedia logo"
+      />
+      <h1 id="title" class="title">Fact O Pedia</h1>
       <button>Share a Fact</button>
     </header>
+    <form class="fact-form">
+      <input type="text" placeholder="Share a fact with the world..." />
+      <span>200</span>
+      <input type="text" placeholder="Trustworthy source" />
+      <select>
+        <option value="">Choose Category:</option>
+        <option value="technology">Technology</option>
+        <option value="science">Science</option>
+        <option value="finance">Finance</option>
+      </select>
+      <button>Post</button>
+    </form>
     <main>
-      <form>
-        <input type="text" />
-        <input type="text" />
-        <select>
-          <option value="">Technology</option>
-          <option value="">Science</option>
-          <option value="">Finance</option>
-        </select>
-        <button>Post</button>
-      </form>
       <aside>
         <!-- THIS PART IS FOR THE CATEGORY LIST -->
         <ul>
@@ -36,35 +47,39 @@
       <section>
         <!-- THIS PART IS FOR THE FACTS LIST -->
         <ul>
-          <li>
+          <li class="fact">
             <p>
               Quantum computing poses a threat to current encryption methods,
               necessitating urgent updates to cryptographic practices.
-              <button>Technology</button>
+              <a
+                href="https://www2.deloitte.com/us/en/insights/focus/tech-trends.html?utm_source=chatgpt.com"
+                target="_blank"
+                >Source</a
+              >
+              <span class="tag">#Technology#</span>
             </p>
-            <a
-              href="https://www2.deloitte.com/us/en/insights/focus/tech-trends.html?utm_source=chatgpt.com"
-              target="_blank"
-              >Source</a
-            >
-            <button>👍</button>
-            <button>🤯</button>
-            <button>⛔️</button>
+            <div>
+              <button>👍</button>
+              <button>🤯</button>
+              <button>⛔️</button>
+            </div>
           </li>
-          <li>
+          <li class="fact">
             <p>
               Potential signs of life detected on exoplanet K2-18b, 124
               light-years away, via compounds DMS and DMDS found by JWST.
-              <button>Science</button>
+              <a
+                href="https://www.thetimes.co.uk/article/were-in-a-golden-age-of-space-discovery-are-we-about-to-find-et-7bptzmltv?utm_source=chatgpt.com"
+                target="_blank"
+                >Source</a
+              >
+              <span class="tag">#Science#</span>
             </p>
-            <a
-              href="https://www.thetimes.co.uk/article/were-in-a-golden-age-of-space-discovery-are-we-about-to-find-et-7bptzmltv?utm_source=chatgpt.com"
-              target="_blank"
-              >Source</a
-            >
-            <button>👍</button>
-            <button>🤯</button>
-            <button>⛔️</button>
+            <div>
+              <button>👍</button>
+              <button>🤯</button>
+              <button>⛔️</button>
+            </div>
           </li>
         </ul>
       </section>
