@@ -1,10 +1,9 @@
 // console.log("Hello World");
 
-// VALUES, VARIABLES & OPERATORS
+// VALUES, VARIABLES & OPERATORS ////////////////////////////////////////
 // let votingInteresting = 21;
 // let votingMindblowing = 22;
 // const text = "Delhi is the capital of India";
-
 // console.log(typeof text);
 
 /*
@@ -23,7 +22,7 @@ Types of Datatypes:
 // const isCorrect = votesFalse < upVotes;
 // console.log(isCorrect);
 
-// FUNCTIONS
+// FUNCTIONS /////////////////////////////////////////////////////////////
 
 // function calcFactAge(year) {
 //   const currentYear = new Date().getFullYear();
@@ -35,7 +34,7 @@ Types of Datatypes:
 // console.log(calcFactAge(2015));
 // console.log(calcFactAge(2008));
 
-// IF/ELSE
+// IF/ELSE //////////////////////////////////////////////////////////////
 
 // let votingInteresting = 2;
 // let votingMindblowing = 28;
@@ -56,7 +55,7 @@ Types of Datatypes:
 
 // falsy values: 0, '', NULL, undefined
 
-// TERNARY OPERATORS
+// TERNARY OPERATORS ///////////////////////////////////////////////////
 
 // let votesFalse = 4;
 // let upVotes = votingInteresting + votingMindblowing;
@@ -64,17 +63,17 @@ Types of Datatypes:
 // const message = upVotes > votesFalse ? "This is true" : "This is false";
 // console.log(message);
 
-// STRINGS
+// STRINGS //////////////////////////////////////////////////////////
 
-function calcFactAge(year) {
-  const currentYear = new Date().getFullYear();
-  const factAge = currentYear - year;
-  if (factAge >= 0) {
-    return factAge;
-  } else {
-    return "Impossible Year";
-  }
-}
+// function calcFactAge(year) {
+//   const currentYear = new Date().getFullYear();
+//   const factAge = currentYear - year;
+//   if (factAge >= 0) {
+//     return factAge;
+//   } else {
+//     return "Impossible Year";
+//   }
+// }
 
 // const text = "Delhi is the capital of India";
 // const starter = "This is a fact: ";
@@ -85,12 +84,12 @@ function calcFactAge(year) {
 
 // const str = `${starter} ${text}. This fact is ${calcFactAge(2012)} years old`;
 
-// ARROW FUNCTIONS
+// ARROW FUNCTIONS /////////////////////////////////////////////////////
 
-const calcFactAge2 = (year) =>
-  year <= new Date().getFullYear()
-    ? new Date().getFullYear() - year
-    : "This is impossible year";
+// const calcFactAge2 = (year) =>
+//   year <= new Date().getFullYear()
+//     ? new Date().getFullYear() - year
+//     : "This is impossible year";
 
-console.log(calcFactAge2(2010));
+// console.log(calcFactAge2(2010));
 // console.log(calcFactAge(2035));
