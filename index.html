@@ -28,10 +28,10 @@
           <h1>Fact O Pedia</h1>
         </div>
 
-        <button class="btn btn-large">Share a fact</button>
+        <button class="btn btn-large btn-share">Share a fact</button>
       </header>
 
-      <form class="fact-form">
+      <form class="fact-form hidden form">
         <input type="text" placeholder="Share a fact with the world..." />
         <span>200</span>
         <input type="text" placeholder="Trustworthy source..." />
@@ -70,27 +70,7 @@
         </aside>
 
         <section>
-          <ul>
-            <li class="fact">
-              <p>
-                React is being developed by Meta (formerly facebook)
-                <a
-                  class="source"
-                  href="https://opensource.fb.com/"
-                  target="_blank"
-                  >(Source)</a
-                >
-              </p>
-              <span class="tag" style="background-color: #3b82f6"
-                >technology</span
-              >
-              <div class="vote-buttons">
-                <button>👍 24</button>
-                <button>🤯 9</button>
-                <button>⛔️ 4</button>
-              </div>
-            </li>
-
+          <ul class="fact-list">
             <li class="fact">
               <p>
                 Millennial dads spend 3 times as much time with their kids than
